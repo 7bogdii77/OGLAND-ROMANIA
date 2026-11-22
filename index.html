@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Calculator schimb bani murdari în bani curați — Ogland România FiveM RP.">
+  <title>Ogland România — Calculator schimb</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="page">
+    <header class="hero">
+      <img class="banner" src="assets/banner.webp" alt="Ogland România">
+      <div class="server-tag"><span class="status-dot"></span> OGLAND ROMANIA <span class="tag-separator">/</span> FIVE M ROLEPLAY</div>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">CALCULATOR OFICIAL</p>
+      <h1>Schimbă-ți banii<br><span>rapid și simplu.</span></h1>
+      <p class="subtitle">Introdu suma de bani murdari și vezi instant cât primești după aplicarea comisionului.</p>
+    </section>
+
+    <section class="calculator" aria-label="Calculator bani">
+      <div class="card-top"><div><span class="mini-label">CONVERSIE</span><h2>Calculator schimb</h2></div><div class="commission"><span>COMISION</span><strong>30%</strong></div></div>
+      <label for="dirtyAmount">SUMĂ BANI MURDARI</label>
+      <div class="amount-wrap"><span class="currency">$</span><input id="dirtyAmount" type="number" min="0" step="1" placeholder="Introdu suma..." inputmode="decimal" autocomplete="off"><span class="currency-code">USD</span></div>
+      <div class="rate-line"><span>Comision reținut</span><strong id="fee">0 $</strong></div>
+      <div class="result">
+        <div class="result-heading"><span>VEI PRIMI</span><span class="result-icon">↗</span></div>
+        <div class="result-value" id="cleanAmount">0 <small>$</small></div>
+        <p>BANI CURAȚI</p>
+      </div>
+      <button id="resetBtn" class="reset" type="button">↺ &nbsp; Resetează calculatorul</button>
+      <p class="disclaimer">Calculator pentru economie virtuală / roleplay FiveM. Nu efectuează tranzacții reale.</p>
+    </section>
+    <footer><span>© <span id="year"></span> OGLAND ROMANIA</span><span class="footer-dot">●</span><span>FIVE M ROLEPLAY</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
